@@ -9,5 +9,8 @@ class openvpn::deploy::prepare (
   Stdlib::Absolutepath $etc_directory
 ) {
   class { 'openvpn::deploy::install': }
-  ~> class { 'openvpn::deploy::service': }
+  ~> class { 'openvpn::deploy::service':
+  	host => "."
+	}
+
 }
