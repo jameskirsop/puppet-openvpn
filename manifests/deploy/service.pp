@@ -1,7 +1,6 @@
 #
 # @summary Base profile
 #
-class openvpn::deploy::service {
 # === Parameters
 #
 # None
